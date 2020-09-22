@@ -15,7 +15,7 @@ eureka:
       
 girl:
   name: xiaoqi
-  age: 390
+  age: 3900
 
 env:
   test12
