@@ -15,7 +15,7 @@ eureka:
       
 girl:
   name: xiaoqi
-  age: 666
+  age: 77
 
 env:
-  test555
+  test66
