@@ -15,7 +15,7 @@ eureka:
       
 girl:
   name: xiaoli
-  age: 18
+  age: 25
 
 env:
   test7
