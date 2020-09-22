@@ -14,8 +14,8 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
       
 girl:
-  name: xiaoli
-  age: 230
+  name: xiaoqi
+  age: 20
 
 env:
-  test9
+  test10
