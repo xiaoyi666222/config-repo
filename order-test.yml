@@ -14,4 +14,4 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
 
 env:
-  test4
+  test8
