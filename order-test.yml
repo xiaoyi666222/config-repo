@@ -12,6 +12,10 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
+      
+girl:
+  name: xiaoli
+  age: 18
 
 env:
   test7
