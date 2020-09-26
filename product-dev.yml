@@ -11,7 +11,3 @@ spring:
     password: 666222
   jpa:
     show-sql: true
-  redis:
-    host: localhost
-    port: 6379
-    password: 666222
