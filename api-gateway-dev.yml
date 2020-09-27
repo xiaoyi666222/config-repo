@@ -1,9 +1,9 @@
 #   com.netflix.zuul.exception.zuulexception timeout
 zuul:
   routes:
-    randomName01:
-      path: /myProduct/**
-      serviceId: product
+#    randomName01:
+#      path: /myProduct/**
+#      serviceId: product
     product: /myProduct/**
   host:
     connect-timeout-millis: 10000
