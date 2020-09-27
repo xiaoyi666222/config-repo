@@ -1,0 +1,30 @@
+#   com.netflix.zuul.exception.zuulexception timeout
+zuul:
+  routes:
+    randomName01:
+      path: /myProduct/**
+      serviceId: product
+    product: /myProduct/**
+  host:
+    connect-timeout-millis: 10000
+    socket-timeout-millis: 60000
+  ignored-patterns:
+    - /**/product/listForOrder
+ribbon:
+  ConnectTimeout: 10000
+  ReadTimeout: 10000
+  OkToRetryOnAllOperations: true
+  MaxAutoRetriesNextServer: 2
+  MaxAutoRetries: 1
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
