@@ -4,7 +4,7 @@ zuul:
 #    randomName01:
 #      path: /myProduct/**
 #      serviceId: product
-    product: /myProduct01/**
+    product: /myProduct/**
   host:
     connect-timeout-millis: 10000
     socket-timeout-millis: 60000
