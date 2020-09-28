@@ -1,15 +1,20 @@
+
 #   com.netflix.zuul.exception.zuulexception timeout
 zuul:
+  sensitive-headers:
   routes:
-#    randomName01:
-#      path: /myProduct/**
-#      serviceId: product
-    product: /myProduct/**
+    randomName01:
+      path: /myProduct/**
+      serviceId: product
+      sensitiveHeaders:
+#    product: /myProduct/**
+#    user: /useraaa/**
   host:
     connect-timeout-millis: 10000
     socket-timeout-millis: 60000
   ignored-patterns:
     - /**/product/listForOrder
+  
 ribbon:
   ConnectTimeout: 10000
   ReadTimeout: 10000
